@@ -38,13 +38,16 @@
   <ItemGroup>
      <Compile Include="Assets\Dynamic Music Pack by JLF\Web Demo Scene\Scripts\LayerLevels.cs" />
      <Compile Include="Assets\Dynamic Music Pack by JLF\Web Demo Scene\Scripts\MixLevels.cs" />
+     <Compile Include="Assets\_code\CreditsControlScript.cs" />
      <Compile Include="Assets\_code\GameApplicationManager.cs" />
+     <Compile Include="Assets\_code\Gameplay2ControlScript.cs" />
      <Compile Include="Assets\_code\GameplayMenuControlScript.cs" />
      <Compile Include="Assets\_code\MainMenuControlScript.cs" />
      <Compile Include="Assets\_code\OptionsMenuControlScript.cs" />
      <Compile Include="Assets\_code\Singleton.cs" />
      <Compile Include="Assets\_code\SingletonGameAppicationManager.cs" />
      <Compile Include="Assets\_code\SingletonSoundManager.cs" />
+     <Compile Include="Assets\_code\StageControlScript.cs" />
      <Compile Include="Assets\_code\ThirdPersonUserControl.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -584,43 +587,49 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-        <HintPath>C:/Users/pack/Documents/951323_163Midterm-612110054-2/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/pack/Desktop/Midterm612110054/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

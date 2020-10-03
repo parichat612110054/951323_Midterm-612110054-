@@ -20,7 +20,7 @@ public class GameplayMenuControlScript : MonoBehaviour
     }
     public void BackToMainMenuButtonClick(Button button) 
     {
-        SceneManager.UnloadSceneAsync("SceneGameplay");
-        SceneManager.LoadScene("SceneMainMenu");
+        SceneManager.UnloadSceneAsync("SceneGameplay1");
+        SceneManager.LoadScene("SceneStage");
     }
 }

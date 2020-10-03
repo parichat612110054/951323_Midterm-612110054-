@@ -32,14 +32,14 @@ public class MainMenuControlScript : MonoBehaviour,IPointerEnterHandler
     {
         buttonStart.onClick.AddListener(delegate{StartButtonClick(buttonStart);});
         buttonOptions.onClick.AddListener ( delegate {OptionsButtonClick(buttonOptions);});
-        buttonCredits.onClick.AddListener ( delegate {HelpButtonClick(buttonCredits);});
+        buttonCredits.onClick.AddListener ( delegate {CreditButtonClick(buttonCredits);});
         buttonExit.onClick.AddListener ( delegate {ExitButtonClick(buttonExit);});
         //buttonSoundTestingScene.onClick.AddListener ( delegate {SoundTestingButtonClick(buttonSoundTestingScene);});
 
     }
     public void StartButtonClick(Button button)
     {
-        SceneManager.LoadScene("SceneGameplay");
+        SceneManager.LoadScene("SceneStage");
     }
     public void OptionsButtonClick(Button button)
     {
@@ -49,7 +49,7 @@ public class MainMenuControlScript : MonoBehaviour,IPointerEnterHandler
             GameApplicationManager.Instance.IsOptionMenuActive = true;
         }
     }
-    public void HelpButtonClick(Button button)
+    public void CreditButtonClick(Button button)
     {
         SceneManager.LoadScene("SceneCredits");
     }

@@ -52,8 +52,7 @@ DifficultyLevel;
         SingletonSoundManager.Instance.MusicVolume = SingletonSoundManager.Instance.
         MusicVolumeDefault;
         else
-        SingletonSoundManager.Instance.MusicVolume = SingletonSoundManager.
-        MUTE_VOLUME;
+        SingletonSoundManager.Instance.MusicVolume = SingletonSoundManager.MUTE_VOLUME;
 
 
     }
@@ -64,7 +63,6 @@ DifficultyLevel;
         SingletonSoundManager.Instance.MasterSFXVolume = SingletonSoundManager.
         Instance.MasterSFXVolumeDefault;
         else
-        SingletonSoundManager.Instance.MasterSFXVolume = SingletonSoundManager.
-        MUTE_VOLUME;
+        SingletonSoundManager.Instance.MasterSFXVolume = SingletonSoundManager.MUTE_VOLUME;
     }
 }
